@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BANKIST-TEST</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <p class="welcome">Login in to proceed</p>
+      <img src="logo.png" class="logo" alt="" srcset="" />
+
+      <form action="" class="login">
+        <input
+          type="text"
+          placeholder="user"
+          class="login__input login__input--user"
+        />
+        <input
+          type="text"
+          placeholder="PIN"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+
+    <!-- App -->
+    <main class="app">
+      <!-- Div Balance PlaceHolder -->
+      <div class="balance">
+        <div>
+          <p class="balance-placeholder">Current balance</p>
+          <p class="balance-date">As of 05/03/2037</p>
+        </div>
+        <p class="balance-value">0000€</p>
+      </div>
+      <!-- Movements -->
+      <div class="movements">
+        <div class="movement-rows">
+          <div class="movement-action action-deposit">2 Deposit</div>
+          <div class="movement-date">3 DAYS AGO</div>
+          <div class="movement-amount">4 000€</div>
+        </div>
+        <div class="movement-rows">
+          <div class="movement-action action-withdraw">1 Withdraw</div>
+          <div class="movement-date">24/01/2037</div>
+          <div class="movement-amount">-378€</div>
+        </div>
+      </div>
+      <!-- Account Operations   -->
+      <div class="account-operations">
+        <!-- Transfer Amount   -->
+        <div class="operation operation--transfer">
+          <h2 class="transfer-placeholder">Transfer money</h2>
+          <form action="" class="form">
+            <input type="text" class="form__input transfer-input" />
+            <input type="number" class="form__input transfer-amount" />
+            <button class="form__btn form_button--transfer">&rarr;</button>
+            <label class="form__label">Transfer to</label>
+            <label class="form__label">Amount</label>
+          </form>
+        </div>
+        <!-- OPERATION: LOAN -->
+        <div class="operation operation--loan">
+          <h2>Request loan</h2>
+          <form class="form form--loan">
+            <input type="number" class="form__input form__input--loan-amount" />
+            <!-- <input type="number" class="form__input form__input--loan-amount" /> -->
+
+            <button class="form__btn form__btn--loan">&rarr;</button>
+          </form>
+          <label class="form__label form__label--loan">Amount</label>
+        </div>
+
+        <!-- OPERATION: CLOSE -->
+        <div class="operation operation--close">
+          <h2>Close account</h2>
+          <form class="form form--close">
+            <input type="text" class="form__input form__input--user" />
+            <input
+              type="password"
+              maxlength="6"
+              class="form__input form__input--pin"
+            />
+            <button class="form__btn form__btn--close">&rarr;</button>
+            <label class="form__label input_confirm--user">Confirm user</label>
+            <label class="form__label input_confirm--pin">Confirm PIN</label>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Containing Summary  -->
+    <footer class="summary">
+      <div class="summary-details">
+        <h3>in <span class="in">0000€</span></h3>
+        <h3>out <span class="out">0000€</span></h3>
+        <h3>interest <span class="in interest">0000€</span></h3>
+        <button class="btn-sort">&downarrow;Sort</button>
+      </div>
+      <div class="summary-deadline">
+        <h2>
+          You will be logged out in <span class="summary-time">05:00</span>
+        </h2>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
